@@ -19,7 +19,6 @@ class Topic {
         void addSubscriber(const std::shared_ptr<ISubscriber>& subscriber);
         void delSubscriber(const std::shared_ptr<ISubscriber>& subscriber);
         void notifySubscribers(const std::string &message) const;      
-
 };
 
 #endif 
