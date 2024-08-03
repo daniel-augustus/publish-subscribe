@@ -1,3 +1,6 @@
+#ifndef EVENT_BUS_H
+#define EVENT_BUS_H
+
 #include "topic.hpp"
 #include <memory>
 #include <string>
@@ -20,3 +23,5 @@ class EventBus {
         std::shared_ptr<Topic> create(const std::string& topicName);
         std::shared_ptr<Topic> getTopic(const std::string &topicName) const;         
 };
+
+#endif 
