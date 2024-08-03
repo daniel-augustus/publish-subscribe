@@ -9,9 +9,9 @@
 class Topic {
     private:
         std::string name;
-        std::vector<std::shared_ptr<ISubscriber>> subscribers;
  
     public:
+        std::vector<std::shared_ptr<ISubscriber>> subscribers_;
         explicit Topic(const std::string &topicName);
         std::string getName() const;
         void clear();
